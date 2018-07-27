@@ -1,2 +1,2 @@
 # PythonCrawler
-py_blogs.py ha a bug to fix
+py_blogs.py has a bug to fix
