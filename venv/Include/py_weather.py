@@ -14,7 +14,7 @@ def get_url(city_name):
         for line in lines:
             if(city_name in line):
                 code = line.split('=')[0].strip()
-                print(code)
+                #print(code)
                 return url + code + '.shtml'
     raise ValueError('invalid city name')
 
@@ -58,7 +58,7 @@ def get_data(html_text, city_name):
     final.append(t)
     bs = BeautifulSoup(html_text, 'html.parser')  #创建BeautifulSoup对象，解析器为：html.parser
     body1 = bs.body  #获取body部分
-    print(body1)
+    #print(body1)
     data = body1.find('div', {'id': '7d'})   #找到id为7d的div
     ul = data.find('ul')
     li = ul.find_all('li')
